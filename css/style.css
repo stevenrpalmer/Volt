@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+    
+    [Stylesheet]
+
+    Project:        Volt.com
+    Version:        1.0
+    Last change:    30.07.14 [Created]
+    Assigned to:    Steven Palmer (SP)                  
+
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+
+    [Table of Contents]
+    
+    1.  Global / Margins / Colors
+    2.  Navigation Styles
+    3.  Jumbotron
+    4.  Footer
+    
+    [Color codes]
+    
+    Background: #13416c (Dark Blue)
+    Content:    #ffffff  (Light Black)
+    
+    #13416c rgb(19,65,108) -  (Dark Blue)
+    #5c81b1 rgb(92,129,177) - (Light Blue)
+    #8d8e8e rgb(141,142,142) - (Medium Grey)
+
+
+    VOLT SUB-COLORS
+    #f29523 rgb(242,149,35) - (Orange)
+    #a74190 rgb(167,65,144) - (Purple)
+    #1dacdf rgb(29,172,223) - (Light Blue)
+    #00aea2 rgb(0,174,162) -  (Teal)
+
+    Buttons:    #f29523 (Orange)
+
+    [Typography]
+
+    Body copy:          1.0em 'Fedra Sans Std', Helvetica, sans-serif;
+    
+-------------------------------------------------------------------*/
+
+/* ==========================================================================
+   1. Global Styles
+   ========================================================================== */
