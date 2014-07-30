@@ -1,0 +1,36 @@
+<?php $thisPage="landing"; ?>
+<?php include 'includes/head.php'; ?>
+
+   <div id="slides">
+      <ul class="slides-container">
+        <li>      
+        <img src="images/home.jpg" alt="home">
+          <div class="container" style="margin:0 auto; width:300px; text-align:center;">
+            <h1>Crafted for <strong>Hospitality</strong></h1>
+            <div class="form-group">
+                <a href="about">
+                  <button type="submit" class="btn">Find Out More</button>
+                </a>
+            </div>
+          </div>
+        </li>
+      </ul> 
+  </div>    
+
+
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true
+      });
+    });
+  </script>
+
+</body>
+</html>
+
