@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="/volt">Brand</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -16,17 +16,18 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-hover="dropdown">Overview</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Developer</a></li>       
-            <li><a href="#">Contact</a></li>       
+            <li><a href="/volt/overview/introduction">Introduction</a></li>    
+            <li><a href="/volt/overview/developer">Developer</a></li>       
+            <li><a href="/volt/overview/investment">Contact</a></li>       
             <li><a href="#">Other Developments</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-hover="dropdown">Why Iskandar Malaysia</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Location</a></li>       
-            <li><a href="#">Investment</a></li>       
-            <li><a href="#">Incentives</a></li>
+            <li><a href="/volt/why-iskandar-malaysia/location">Location</a></li>       
+            <li><a href="/volt/why-iskandar-malaysia/investment">Investment</a></li>       
+            <li><a href="/volt/why-iskandar-malaysia/incentives">Incentives</a></li>
           </ul>
         </li>
         <li class="dropdown">

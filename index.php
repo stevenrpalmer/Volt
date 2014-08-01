@@ -42,7 +42,7 @@
           <div class="container" style="">
             <h1>SPARK YOUR BUSINESS POTENTIAL</h1>
             <div class="form-group">
-                <a href="about">
+                <a href="/volt/overview/introduction">
                   <button type="submit" class="btn">Learn More</button>
                 </a>
             </div>

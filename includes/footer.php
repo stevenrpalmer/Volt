@@ -1,5 +1,3 @@
-    <div style="height:100px;">&nbsp;</div>
-
     <div id="footer">
       <div class="container">
         <a href="/volt/">

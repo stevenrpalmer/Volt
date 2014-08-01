@@ -21,6 +21,9 @@
     5.  Alignment 
     6.  Landing Page Fullscreen Image Slides
     7.  Footer
+    8. Navbar    
+    9.  Jumbotron
+    10. Buttons
     
     [Color codes]
     
@@ -31,6 +34,7 @@
     #395288 rgb(57,82,136) - (Light Blue)
     #0b1426 rgb(11,20,38) - (Dark Blue / Menu Background)
     #1d2b49 rgb(29,43,73) - (Dropdown Menu Background)
+    #c8d2e6 rgb(200,210,230) - (Paragraph Text)
 
     #8d8e8e rgb(141,142,142) - (Medium Grey)
 
@@ -40,7 +44,7 @@
     #1dacdf rgb(29,172,223) - (Light Blue)
     #00aea2 rgb(0,174,162) -  (Teal)
 
-    Buttons:    #f29523 (Orange)
+    Buttons:    #ff7200 (Orange) #e15800 (Hover)
 
     [Typography]
 
@@ -96,35 +100,89 @@ html {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
     margin-bottom: 0px;
     margin-top: 0px;
-    font-family: 'FedraSerifBBook', Helvetica, serif;
+    font-family: 'FedraSansStdLight', Helvetica, serif;
 }
 
 
 
 h1 { /* h1 is on the landing page. */
   font-size: 2.5em;
-  line-height: 36px;
+  line-height: 2.0em;  
   letter-spacing: -1px;
   color: #13416c;
   text-transform: uppercase;
   text-align: center;
 }
 
-
-p {
-  font-size: 1.1em;
-  margin:0 0 20px;
-  letter-spacing: 0px;
-  font-weight: normal;
-  color: #555555;
-  line-height: 26px;  
+h2 { /* h2 is the main title at the top of the page. */ 
+  font-size: 3.5em;
+  line-height: 1.3em;  
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom:1.0em;
+}
+h2 > strong {
+  font-family: 'FedraSansStdNormal', Helvetica, serif;  
 }
 
-.small { /* copy that accompanies the circle link paragraph */
-  font-size: .95em;
-  line-height: 16px;  
-  padding:0 14%;  
-  margin: 5px 0;
+
+h3 { /* h3 is a paragraph heading. */ 
+  font-family: 'FedraSansStdNormal', Helvetica, serif;
+  font-size: 2.3em;
+  line-height: 1.1em;  
+  letter-spacing: -1px;
+  color: #ffffff;
+  text-align: left;
+  margin:0;
+}
+
+h4 { /* h4 is a paragraph subheading. */ 
+  font-family: 'FedraSansStdNormal', Helvetica, serif;
+  font-size: 1.8em;
+  line-height: 1.3em;  
+  letter-spacing: -1px;
+  color: #c8d2e6;
+  text-align: left;
+  margin:0;
+}
+
+p {  /* paragraph text */
+  font-size: 1.5em;
+  margin:1em 0;
+  letter-spacing: 0px;
+  font-weight: normal;
+  color: #c8d2e6;
+  line-height: 2.0em;  
+}
+
+small { /* copy that accompanies the circle link paragraph */
+  font-family: 'FedraSansStdLight',Helvetica,serif;
+  color: #95a7ca;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+small li.incentives {
+  font-size: 0.9em;
+  color: #4e5f83;
+  margin:5% 5% 2% 15%;
+  line-height: 1.2em;  
+  text-align: left;
+}
+
+small li.developer {
+  font-size: 0.9em;
+  color: #717a8d;
+  margin:2.5% 0% 0 7%;
+  line-height: 1.2em;  
+  text-align: left;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 a {
@@ -138,6 +196,13 @@ a:hover, a:focus {
     color: #79000A;  
     text-decoration: underline;
 }
+
+.big-glyph {
+  color:#d6ddeb; 
+  font-size: 4em; 
+  margin-bottom:0.3em;
+}
+
 /* ==========================================================================
    3. Line on Side of Title
    ========================================================================== */
@@ -190,12 +255,29 @@ h2.line-side span:after {
 .margin-lg {
     margin-bottom: 200px !important;
 }
+
+/* ==========================================================================
+   4. Padding
+   ========================================================================== */
+
+.padding-2 {
+  padding-left:2%;
+  padding-right:2%;
+}
+.padding-5 {
+  padding-left:5%;
+  padding-right:5%;
+}
+.padding-10 {
+  padding-left:10%;
+  padding-right:10%;
+}
+
 /* ==========================================================================
    5. Alignment
    ========================================================================== */
 
 .center {
-    margin:0 auto;
     text-align: center;
 }
 .right {
@@ -205,7 +287,29 @@ h2.line-side span:after {
     text-align: left;
 }
 
+.float-right {
+    float: right;
+}
 
+.float-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ==========================================================================
+   5. Images
+   ========================================================================== */
+.img-responsive {
+    /*min-height: 300px;*/
+}
+.img-thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 1px;
+}
 
 /* ==========================================================================
    6. Landing Page Fullscreen Image Slides
@@ -251,7 +355,7 @@ h2.line-side span:after {
    ========================================================================== */
 
 #footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: rgb(11,20,38);
@@ -373,8 +477,111 @@ h2.line-side span:after {
 .jumbotron > img {
     width:100%;
 }
-.flair {
+
+.flair-jumbotron {
+    background:url('../images/flair-jumbotron.png') no-repeat scroll top left; 
     width:100%;
-    padding: 0;
-    margin-bottom: 0px;  
+    height:100%;
+    padding-top: 8em;  
   }
+
+/* ==========================================================================
+   10. Forms
+   ========================================================================== */
+.btn-default {
+    font-family: 'FedraSansStdLight', Helvetica, sans-serif;    
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    background-color: #ff7200; background-color: rgba (255,114,0,1);
+    border-radius: 0px; 
+    border: none;
+    padding: 0.5em 1.5em;
+    margin-top:0;   
+    font-size: 1.5em;
+    height: 2.5em;       
+}
+
+.btn-default:hover {
+    background-color: #e15800; background-color: rgba(225,88,0,1);
+    color: #ffffff;    
+}
+.input-field {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #333333;
+    margin-right:1em;
+    font-size: 1.5em;
+    height: 2.5em;
+    padding: 10px 18px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+}
+
+.email-subscribe {
+    background:#1f3260;
+    padding-top:2em;
+    padding-bottom:2em;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* ==========================================================================
+   11. Background Colors
+   ========================================================================== */
+
+.lightblue-bg {
+    background: url('../images/flair-blue.png') no-repeat scroll bottom right #1f3260;
+    padding-top:8em;
+    padding-bottom:4em;
+    margin-top:1.8em;
+    margin-bottom:1.8em;
+}
+
+.darkblue-bg {
+    background: url('../images/flair-bottom.png') no-repeat scroll bottom #15274e;
+    padding-top:2em;
+    padding-bottom:8em;
+    margin-top:1.8em;
+    margin-bottom:0;
+}
+
+/* ==========================================================================
+   12. Tables
+   ========================================================================== */
+.table-striped > tbody > tr:nth-child(2n+0) > td {
+    background-color: #1c2e55;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: transparent;
+}
+
+
+th, td {
+  font-family: 'FedraSansStdLight', Helvetica, sans-serif;    
+  padding:1% 0;
+  font-size: 1.5em;  
+}
+
+th {  /* paragraph text */  
+  color: #c8d2e6;  
+  padding-bottom:2%;  
+
+}
+
+td {  /* paragraph text */ 
+  color: #ffffff;  
+}
+
+td span {  /* paragraph text */ 
+  color: #ffffff;  
+  margin-left:1em;
+}
+/* ==========================================================================
+   13. Devloper Images Backgrounds
+   ========================================================================== */
+
