@@ -38,7 +38,10 @@
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Registeration</a></li>            
           </ul>
-        </li>                
+        </li>   
+        <li>
+          <a href="/volt/contact">Contact</a>
+        </li>                        
       </ul>
     </div><!-- /.navbar-collapse -->
 
